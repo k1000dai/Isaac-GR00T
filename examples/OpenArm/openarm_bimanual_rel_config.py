@@ -18,7 +18,6 @@ openarm_config = {
         modality_keys=[
             "wrist_right",
             "wrist_left",
-            "ceiling",
             "head_left",
             "head_right",
         ],
@@ -77,7 +76,4 @@ openarm_config = {
     ),
 }
 
-register_modality_config(
-    openarm_config,
-    embodiment_tag=EmbodimentTag.OPENARM_BIMANUAL_REL_ALL_CAM,
-)
+register_modality_config(openarm_config, embodiment_tag=EmbodimentTag.OPENARM_BIMANUAL_REL)
