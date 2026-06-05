@@ -142,6 +142,11 @@ class EmbodimentTag(Enum):
     Uses the custom-embodiment finetuning projector slot.
     """
 
+    OPENARM_BIMANUAL_REL_ALL_CAM = "openarm_bimanual_rel_all_cam"
+    """
+    OpenArm bimanual, relative joint-delta actions with all configured cameras (16 DOF).
+    """
+
     @classmethod
     def resolve(cls, tag: "str | EmbodimentTag") -> "EmbodimentTag":
         """Resolve a string to an EmbodimentTag, case-insensitively.
@@ -219,6 +224,7 @@ FINETUNE_ONLY_TAGS: frozenset[EmbodimentTag] = frozenset(
         EmbodimentTag.NEW_EMBODIMENT,
         EmbodimentTag.ROBOCASA_PANDA_OMRON,
         EmbodimentTag.ROBOCASA_GR1_TABLETOP,
+        EmbodimentTag.OPENARM_BIMANUAL_REL_ALL_CAM,
     }
 )
 """Tags for custom robots (finetuning only, not in any shipped checkpoint)."""
