@@ -76,4 +76,4 @@ openarm_config = {
     ),
 }
 
-register_modality_config(openarm_config, embodiment_tag=EmbodimentTag.OPENARM_BIMANUAL_REL)
+register_modality_config(openarm_config, embodiment_tag=EmbodimentTag.OPENARM_BIMANUAL)
