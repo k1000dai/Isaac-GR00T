@@ -75,7 +75,7 @@ EMBODIMENT_TAG_TO_PROJECTOR_INDEX = {
     "new_embodiment": 10,
     "robocasa_panda_omron": 10,
     "robocasa_gr1_tabletop": 10,
-    "openarm_bimanual": 10,
+    "openarm_bimanual": 12,
 }
 
 
